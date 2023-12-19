@@ -1,0 +1,302 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>@(Html.Raw(ViewBag.Title))</title>
+
+    <!-- mobile responsive meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/css/style.css")">
+    <link rel="stylesheet" href="@Url.Content("~/Content/Site/css/responsive.css")">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="@Url.Content("~/Content/Site/images/logo/kirlangic.ico")">
+    <link rel="icon" type="image/png" href="@Url.Content("~/Content/Site/images/logo/kirlangic.ico")" sizes="32x32">
+    <link rel="icon" type="image/png" href="@Url.Content("~/Content/Site/images/logo/kirlangic.ico")" sizes="16x16">
+
+</head>
+<body>
+
+    <div class="boxed_wrapper" >
+
+        <header class="top-bar" >
+            <div class="container">
+                <div class="clearfix">
+                    <ul class="top-bar-text float_left">
+                        <li>Bizi Arayın  <a href="tel: +905513975057" style="color:white"> <i class="flaticon-telephone"> 0551 397 50 57 </i></a></li> 
+                        <li><i class="flaticon-envelope"></i> <a href="tel: +905513975057" style="color:white"> kirlangicboya@gmail.com </a></li>
+                    </ul>
+                    <ul class="social-style-one float_right">
+                        <li><a href="https://wa.me/+905513975057" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                        <li><a href="https://maps.app.goo.gl/UTWCQwHCWcUHchBCA" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+                        <li><a href="https://www.facebook.com/p/K%C4%B1rlang%C4%B1%C3%A7-TozBoya-100063685981245/?paipv=0&eav=Afbo9r6A1dghD2HcJ4sIw42n037iFwyP556NnffBLGjVK3uCuUNO9Nrc-WM0SqP_rX4&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="mailto:kirlangicboya@gmail.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                        <li><a href="https://www.youtube.com/channel/UCIgu8cFgGdnzNaCz6c5udZA
+                               " target="_blank"><i class="fa fa-youtube"></i></a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+
+        <section class="mainmenu-area stricky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="main-logo">
+                            <a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Content/Site/images/logo/yenilogo.png")" alt=""></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-5 menu-column">
+                        <nav class="main-menu">
+                            <div class="navbar-header">
+                                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                    <span class="icon-bar"></span>
+                                </button>
+                            </div>
+                            <div class="navbar-collapse collapse clearfix">
+                                <ul class="navigation clearfix">
+
+                                    <li class="current">
+                                        <a href="@Url.Action("Index","Home")">Anasayfa</a>
+
+                                    </li>
+
+                                    <li class="dropdown">
+                                        <a href="@Url.Action("Index","About")">Hakkımızda</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("Index","About")">Biz Kimiz ?</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+                                    <li class="dropdown">
+                                        <a href="@Url.Action("Index","Projects")">HİZMETLERİMİZ</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("Index","Projects")">HİZMETLERİMİZ</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+
+                                </ul>
+
+                                <ul class="mobile-menu clearfix">
+
+                                    <li class="current">
+                                        <a href="@Url.Action("Index","Home")">ANASAYFA</a>
+
+                                    </li>
+
+                                    <li class="current">
+                                        <a href="@Url.Action("Index","About")">HAKKIMIZDA</a>
+                                        <ul>
+                                            <li><a href="@Url.Action("Index","About")">Biz Kimiz ?</a></li>
+
+                                        </ul>
+                                    </li>
+
+
+
+                                    <li class="current">
+                                        <a href="@Url.Action("Index","Projects")">HİZMETLERİMİZ</a>
+
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </nav>
+                    </div>
+
+                    <div class="col-md-2">
+                        <div class="right-column">
+                            <div class="right-area">
+                                <div class="link-btn4 float_right">
+                                    <a href="https://maps.app.goo.gl/dJJ67mXHAAXiufBNA" target="_blank" class="btn-style-one">YOL TARİFİ AL</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        @RenderBody()
+
+
+
+
+        <footer class="main-footer">
+
+            <!--Widgets Section-->
+            <div class="widgets-section">
+                <div class="container">
+                    <div class="row">
+                        <!--Big Column-->
+                        <div class="big-column col-md-7 col-sm-12 col-xs-12">
+                            <div class="row clearfix">
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-md-8 col-sm-6 col-xs-12">
+                                    <div class="footer-widget about-widget">
+                                        <figure class="footer-logo"><a href="@Url.Action("Index","Home")"><img src="@Url.Content("~/Content/Site/images/logo/footerlogo.png")" alt=""></a></figure>
+
+                                        <div class="widget-content">
+                                            <div class="text"><p>Hoş geldiniz! Karabağlar Sanayi bölgesinde faaliyet gösteren Kırlangıç Elektrostatik Toz Boya olarak, uzman ekibimiz ve yüksek kaliteli ekipmanlarımızla endüstriyel boyama konusunda size özel çözümler sunuyoruz.</p> </div>
+
+                                            <ul class="social">
+                                                <li><a href="https://wa.me/+905513975057" target="_blank"><i class="fa fa-whatsapp"></i></a></li>
+                                                <li><a href="https://maps.app.goo.gl/UTWCQwHCWcUHchBCA" target="_blank"><i class="fa fa-map-marker"></i></a></li>
+                                                <li><a href="https://www.facebook.com/p/K%C4%B1rlang%C4%B1%C3%A7-TozBoya-100063685981245/?paipv=0&eav=Afbo9r6A1dghD2HcJ4sIw42n037iFwyP556NnffBLGjVK3uCuUNO9Nrc-WM0SqP_rX4&_rdr" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                                <li><a href="mailto:kirlangicboya@gmail.com" target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                                <li>
+                                                    <a href="https://www.youtube.com/channel/UCIgu8cFgGdnzNaCz6c5udZA
+                               " target="_blank"><i class="fa fa-youtube"></i></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-md-4 col-sm-6 col-xs-12">
+                                    <div class="footer-widget service-widget">
+                                        <div class="section-title">
+                                            <h3>Hizmetlerimiz</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><a href="@Url.Action("Index","Projects")">Elektrostatik Toz Boyama</a></li>
+                                                <li><a href="@Url.Action("Index","Projects")">Özel Renk Seçenekleri</a></li>
+                                                <li><a href="@Url.Action("Index","Projects")">Toz Boya Yüzey İşlem</a></li>
+                                                <li><a href="@Url.Action("Index","Projects")">Toz Boya Kurutma ve Pişirme</a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <!--Big Column-->
+                        <div class="big-column col-md-5 col-sm-12 col-xs-12">
+                            <div class="row clearfix">
+
+                                <!--Footer Column-->
+                                <div class="footer-column col-md-6 col-sm-6 col-xs-12">
+                                    <div class="footer-widget links-widget">
+                                        <div class="section-title">
+                                            <h3>ÇALIŞMA SAATLERİMİZ</h3>
+                                        </div>
+                                        <div class="widget-content">
+                                            <ul class="list">
+                                                <li><p>Pazartesi: 09:00 - 19:00 </p></li>
+                                                <li><p>Salı     : 09:00 - 19:00 </p></li>
+                                                <li><p>Çarşamba : 09:00 - 19:00 </p></li>
+                                                <li><p>Perşembe : 09:00 - 19:00 </p></li>
+                                                <li><p>Cuma     : 09:00 - 19:00 </p></li>
+                                                <li><p>Cumartesi: 09:00 - 14:00 </p></li>
+                                                <li><p>Pazar    : Kapalı </p></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <!--Footer Column-->
+                                
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!--Footer Bottom-->
+            <div class="footer-bottom">
+                <div class="container">
+                    <div class="pull-left copy-text">
+                        <p>Copyrights © 2023 All Rights Reserved by <a href="@Url.Action("Index","Home")"> Kırlangıç Elektrostatik Toz Boya</a></p>
+
+                    </div><!-- /.pull-right -->
+                    
+                </div><!-- /.container -->
+            </div>
+
+        </footer>
+
+        <!-- Scroll Top Button -->
+        <button class="scroll-top tran3s color2_bg">
+            <span class="fa fa-angle-up"></span>
+        </button>
+        <!-- pre loader  -->
+        <div class="preloader"></div>
+
+
+        <!-- jQuery js -->
+
+        <script src="@Url.Content("~/Content/Site/js/jquery.js")"></script>
+
+        <!-- bootstrap js -->
+        <script src="@Url.Content("~/Content/Site/js/bootstrap.min.js")"></script>
+        <!-- jQuery ui js -->
+        <script src="@Url.Content("~/Content/Site/js/jquery-ui.js")"></script>
+        <!-- owl carousel js -->
+        <script src="@Url.Content("~/Content/Site/js/owl.carousel.min.js")"></script>
+        <!-- jQuery validation -->
+        <script src="@Url.Content("~/Content/Site/js/jquery.validate.min.js")"></script>
+        <!-- google map -->
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCRvBPo3-t31YFk588DpMYS6EqKf-oGBSI"></script>
+        <script src="@Url.Content("~/Content/Site/js/gmap.js")"></script>
+        <!-- mixit up -->
+        <script src="@Url.Content("~/Content/Site/js/wow.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.mixitup.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.fitvids.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/bootstrap-select.min.js")"></script>
+
+        <!-- revolution slider js -->
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/jquery.themepunch.tools.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/jquery.themepunch.revolution.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.actions.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.carousel.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.kenburn.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.layeranimation.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.migration.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.navigation.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.parallax.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.slideanims.min.js")"></script>
+        <script src="@Url.Content("~/Content/Site/assets/revolution/js/extensions/revolution.extension.video.min.js")"></script>
+
+        <!-- fancy box -->
+        <script src="@Url.Content("~/Content/Site/js/jquery.fancybox.pack.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.polyglot.language.switcher.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/nouislider.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.bootstrap-touchspin.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/SmoothScroll.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.appear.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.countTo.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/jquery.flexslider.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/imagezoom.js")"></script>
+        <script id="map-script" src="@Url.Content("~/Content/Site/js/default-map.js")"></script>
+        <script src="@Url.Content("~/Content/Site/js/custom.js")"></script>
+
+    </div>
+
+</body>
+</html>
